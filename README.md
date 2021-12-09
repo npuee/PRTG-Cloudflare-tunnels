@@ -1,6 +1,5 @@
 # PRTG-Cloudflare-tunnels
-PRTG powershell script to monitor Argo tunnels
-
+PRTG powershell sensor to monitor status of Cloudflare Argo tunnels.
 # Installation
 * Extract to root of PRTG
 * Add "EXE/Script Sensor"
