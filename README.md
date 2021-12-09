@@ -5,9 +5,9 @@ PRTG powershell sensor to monitor status of Cloudflare Argo tunnels.
 * Extract/copy to root of PRTG
 * Add "EXE/Script Sensor"
 * Add parameters
-  *-auth_email 'cloudflare email'
-  *-auth_key 'cloudflare auth key'
-  *-account 'cloudflare account id'
+  -auth_email 'cloudflare email'
+  -auth_key 'cloudflare auth key'
+  -account 'cloudflare account id'
 * Check "Use Windows credentials of parent device"
 
 ![image](https://user-images.githubusercontent.com/2597870/145362478-0bee55d4-19ef-4801-acd1-f37434abee8e.png)
