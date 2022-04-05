@@ -38,7 +38,7 @@ $AllProtocols = [System.Net.SecurityProtocolType]'Ssl3,Tls,Tls11,Tls12'
 
 #Query API point
 try {
-$responce = Invoke-WebRequest -Uri $api_uri -Method Get -Headers $headers  | ConvertFrom-Json 
+$responce = Invoke-WebRequest -Uri $api_uri -Method Get -Headers $headers -UseBasicParsing | ConvertFrom-Json 
 }catch{
 	Write-Output "<prtg>"
 	Write-Output "<error>1</error>"
