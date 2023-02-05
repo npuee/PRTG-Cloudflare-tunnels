@@ -60,10 +60,10 @@ Foreach ($entry in ($responce.result )){
 Write-Host "<result>"
 $name = $entry.name
 Write-Host "<channel>$name</channel>"
-if($entry.status -eq "active"){$status= 0} else {$status= 2}
-Write-Host "<value>$status</value>"
-Write-Host "<ValueLookup>oid.CloudFlare.ArgoTunnel.Status</ValueLookup>"
-Write-Host "</result>"
+if($entry.status -eq "healthy"){$status= 0} else {$status= 2}
+	Write-Host "<value>$status</value>"
+	Write-Host "<ValueLookup>oid.CloudFlare.ArgoTunnel.Status</ValueLookup>"
+	Write-Host "</result>"
 }
 
 #Write Responce Time
